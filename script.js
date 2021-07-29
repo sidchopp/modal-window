@@ -31,5 +31,20 @@ for (let i = 0; i < btnsShowModal.length; i++) {
 btnCloseModal.addEventListener('click', closeModal);
 overlay.addEventListener('click', closeModal);
 
+// for keyboard events( like we are using esc key to hide the modal)
+// keydown means "any" key we press
+document.addEventListener('keydown', function (e) {
+  // to see which key is pressed on the console
+  //console.log(e);
+  // to look for a specific proerty we use its name, like
+  //console.log(e.key);
+  // to close the modal with esc key, when the modal is already open
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
+
+
+
 
 
