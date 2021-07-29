@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Modal window</title>
+</head>
+
+<body>
+    <button class="show-modal">Welcome</button>
+    <button class="show-modal">About Me</button>
+    <button class="show-modal">Contact</button>
+
+    <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1>Hi, My name is Siddharth Chopra. You can call me <i>Sid.</i></h1>
+        <p>
+            I am an <i>AWS Certified Cloud Practitioner</i> with a <b><i>Master's degree</i></b> in Physics. I love building Web Applications.
+        </p>
+        <p>
+            I live in Calgary, Canada. 🍁
+        </p>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
