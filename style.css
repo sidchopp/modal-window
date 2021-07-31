@@ -82,3 +82,13 @@ p {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+#today {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #3a454b;
+  text-align: center;
+  font-size: 2rem;
+}

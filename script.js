@@ -43,7 +43,11 @@ for (let i = 0; i < btnsShowModal.length; i++) {
   });
 };
 
+// To show present day in HTML file
 
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+let today = `Hope you are enjoying ${days[new Date().getDay()]}!! 😎`
+document.querySelector('#today').innerHTML = today;
 
 
 
